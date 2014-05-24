@@ -31,7 +31,7 @@ class OPcache_patch {
 			else
 				add_action('plugins_loaded', array(__CLASS__, 'plugin_textdomain'));
 
-			self::$instance = new OPcache_dashboard;
+			self::$instance = new OPcache_patch;
 		}
 		return self::$instance;
 	}
