@@ -1,8 +1,8 @@
 <?php
 /*
  * Plugin Name: WP OPcache Patch
- * Plugin URI: http://wordpress.org/plugins/opcache/
- * Description: OPcache dashboard designed for WordPress
+ * Plugin URI: http://www.extendwings.com
+ * Description: Improve OPcache compatibility with WordPress
  * Version: 0.1.0
  * Author: Daisuke Takahashi(Extend Wings)
  * Author URI: http://www.extendwings.com
