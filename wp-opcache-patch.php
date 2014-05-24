@@ -18,6 +18,7 @@ if(!function_exists('add_action')) {
 }
 
 add_action('init', array('OPcache_patch', 'init'));
+OPcache_patch::necessity_chk();
 
 class OPcache_patch {
 	static $instance;
@@ -57,5 +58,13 @@ class OPcache_patch {
 
 	static function plugin_textdomain() {
 		load_plugin_textdomain('wp-opcache-patch', false, dirname(plugin_basename(__FILE__)) . '/languages/');
+	}
+
+	static function necessity_chk() {
+		require_once(ABSPATH.'wp-admin/includes/plugin.php');
+		if(is_plugin_active('opcache/opcache.php') || (is_multisite() && is_plugin_active_for_network('opcache/opcache.php'))) {
+			deactivate_plugins(__FILE__);
+			trigger_error("[WP OPcache Patch] 'OPcache dashboard' is already installed. It includes this patch!", E_USER_NOTICE);
+		}
 	}
 }
