@@ -16,6 +16,8 @@ Are you experiencing the problem using WordPress with OPcache? It may occur afte
 This plugin reset all cache after upgrading so that you don't have to see "Please update!" repeatedly.
 
 ### Notice
+* All of this plugin's feature is included in [OPcache Dashboard](http://wordpress.org/plugins/opcache/).
+  If we detected it is activated, this will be automatically deactivated to avoid conflict.
 * **Important**: To use this plugin, check following.
 	1. **PHP 5.5 or later**, Did you compile PHP with *--enable-opcache option*?
 	2. **PHP 5.4 or earlier**, Did you installed *PECL ZendOpcache*?
