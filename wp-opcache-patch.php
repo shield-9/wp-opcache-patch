@@ -51,7 +51,7 @@ class OPcache_patch {
 		);
 
 		if(func_num_args() >= 2)
-			$hook_extra = array_merge($hook_extra, func_get_arg(2));
+			$hook_extra = array_merge($hook_extra, func_get_arg(1));
 
 		trigger_error("[WP OPcache Patch] Your WordPress is successfully updated! Detail:\n".var_export($hook_extra, true), E_USER_NOTICE);
 	}
