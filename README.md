@@ -3,7 +3,7 @@
 * **Donate link**: http://www.extendwings.com/donate/
 * **Tags**: PHP, Zend, OPcache, cache, patch, hotfix, bug, 
 * **Requires at least**: 3.8
-* **Tested up to**: 3.9.1
+* **Tested up to**: 4.0
 * **Stable tag**: 0.1.0
 * **License**: AGPLv3 or later
 * **License URI**: http://www.gnu.org/licenses/agpl.txt
